@@ -11,7 +11,9 @@
         header {
             background-color: rgb(68, 122, 221);
             margin: 0px;
+            padding: 20px;
         }
+
         h1 {
             margin: 0px;
             padding: 20px;
@@ -24,48 +26,110 @@
             text-align: center;
             
         }
+
         body {
             background-color: darkolivegreen;
             padding: 0px;
             border: 0px;
         }
+
         img {
             display: block;
             border: 10px blueviolet solid;
             margin: auto;
+            width: 60%;
+            height: 400px;
         }
+
         p {
             text-align: justify;
         }
+
         .miau {
             border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
         }
-        
+
+        .menu {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .lnk_m {
+            margin-left: 20px;
+            font-size: 1.5em;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            transition: 0.8s;
+        }
+
+        .lnk_m:hover {
+            background-color: black;
+        }
+
+        .sub_header {
+            background-color: rgb(128, 92, 48);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #sla_mlk {
+            margin-right: 20px;
+            font-size: 1.5em;
+            text-decoration: none;
+            padding: 10px;
+            transition: 0.8s;
+        }
+
+        .a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .a:hover {
+            background-color: aqua;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>GATINHOS</h1>
+
+        <div class="sub_header">
+        <div class="menu">
+
+            <a class="lnk_m" href="gatogif.html">FOTO</a>
+            <a  class="lnk_m" href="">GIF</a>
+            <a class="lnk_m" href="gatov.html">VIDEO</a>
+
+        </div>
+        <div id="sla_mlk">
+            <a  class="a" href="adotar.html">ADOTAR</a>
+        </div>
+        </div>
     </header>
     <main>
         
         <div class="miau">
-        <h2>Frederico</h2>
+        <h2>CLEITINHO: o desconfiado</h2>
         <img src="gato desconfiado.gif" alt="">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi repudiandae quisquam asperiores, facilis magni nam obcaecati, nesciunt mollitia officiis porro officia veniam nostrum natus atque ut ullam? Excepturi, voluptatem temporibus!</p>
         <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aut, reiciendis enim esse iure veniam quaerat quia cum, dignissimos corrupti ratione fugiat expedita ipsum architecto odio similique doloremque facilis cumque?</P>
         </div>
 
         <div class="miau">
-        <h2>Mel🐾</h2>
+        <h2>CHICO: o mudinho</h2>
         <img src="gato gritando.gif" alt="">
         <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem delectus rem optio nostrum odio mollitia iste recusandae? Dolorem fuga, earum, voluptates possimus alias accusantium explicabo aliquid a incidunt itaque quibusdam.</P>
         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam a optio reiciendis voluptatem ullam, voluptas ratione! Itaque, ratione unde veniam reiciendis vitae animi nihil id, debitis quos, aspernatur accusamus quam!,</P>
         </div>
 
         <div class="miau">
-        <h2>Laranjinha🐾</h2>
-        <img src="cat-driving-cat.gif" alt="">
+        <h2>SIMBA: o motorista de UBER</h2>
+        <img class="gatodrive" src="cat-driving-cat.gif" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem nesciunt ad vitae, hic distinctio voluptas pariatur natus. Architecto eos repellat nam. Fuga dolorem natus sequi soluta asperiores eveniet obcaecati.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A amet similique inventore enim, ducimus nisi, quisquam perferendis beatae laudantium doloribus qui ipsum provident expedita. Odit doloribus accusamus expedita. Asperiores, maxime?</p>
         </div>
