@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    
+}
+body {
+    background-image: url("6757124-fundo-de-padrao-sem-costura-de-volta-as-aulas-vetor.jpg");
+    background-repeat: repeat;
+}
+header {
+    background-color: aqua;
+    height: 100px;
+    position: relative;
+}
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+.menu {
+    text-align: center;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+a:hover {
+    background-color: rgb(83, 119, 119);
+    color: white;
+}
+
+.foto {
+    width: 300px;
+    height: 150px;
+}
+
+.campo {
+    background-color: bisque;
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+    float: left;
+}
+h2 {
+    text-decoration: underline;
+    padding: 3px;
+}
+.clear {
+    clear: both;
+}
+footer {
+    background-color: aqua;
+    height: 30px;
+}
+h3 {
+    text-align: center;
+}
