@@ -11,7 +11,13 @@ body {
 header {
     background-color: aqua;
     height: 100px;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+main {
+    margin: 100px auto 50px auto;
+    display: block;
 }
 h1 {
     padding-top: 20px;
@@ -28,6 +34,7 @@ a {
     color: black;
     padding: 5px;
 }
+
 a:hover {
     background-color: rgb(83, 119, 119);
     color: white;
@@ -55,6 +62,11 @@ h2 {
 footer {
     background-color: aqua;
     height: 30px;
+    width: 100%;
+    padding: 10px 0px;
+    position: fixed;
+    bottom: 0px;
+
 }
 h3 {
     text-align: center;
