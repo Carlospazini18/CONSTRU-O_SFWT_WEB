@@ -5,47 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AULA 8 - LINK</title>
     <style>
-        #principal {
-            background-color: rgb(135, 135, 223);
-            width: 300px;
-            margin: auto;
-            margin-top: 10%;
-            padding: 20px;
-            border-radius: 10px;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(142, 223, 162);
         }
         h1 {
+            padding-top: 10px;
+            background-color: rgb(104, 104, 151);
             text-align: center;
+            height: 50px
         }
-        #alinhar {  
-            margin-top: 30px; 
-            display: flex;
-            justify-content: space-around;
-            gap: 5px;
+
+        #principal {
+            background-color: rgb(104, 104, 151);
+            margin: 150px auto 0px;
+            width: 500px;
+            padding: 15px;
+            border-radius: 10px;
         }
-        a { 
-            padding: 5px;
+
+        a.cidade {
+            background-color: aliceblue;
+            padding: 10px;
+            
+        }
+
+        a {
             text-decoration: none;
             color: black;
         }
-        a:hover {
-            background-color: white;
-            color: rgb(135, 135, 223);
+
+        #content-cidade a {
+            background-color: aliceblue;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        #content-cidade a:hover {
+            background-color: rgba(0, 0, 255, 0.274);
+            color: white;
+        }
+
+        #content-cidade {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #downloads {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        #downloads a {
+            background-color: rgb(144, 144, 240);
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        #downloads a:hover {
+            color: black;
+            background-color: wheat;
         }
     </style>
 </head>
 <body>
-
+    <h1>LINKS</h1>
      <div id="principal">
-        <h1>LINKS</h1>
+        
 
-        <div id="alinhar">
-            <span>
-                <a href="cidades/aracruz.html" target="_self">CIDADE</a>
-            </span>
-            <span>
-                <a rel="external" target="_blank" href="https://pt.wikipedia.org/wiki/Aracruz">LINK EXTERNO</a>
-            </span>
+        <div>
+            <div id="content-cidade">
+                <a href="cidades/aracruz.html" target="_self">🔗CIDADE</a>
+                <a rel="external" target="_blank" href="https://pt.wikipedia.org/wiki/Aracruz">🔗LINK EXTERNO</a>
+            </div>
+
+            <hr>
+            <div id="downloads">
+                <a download="gatinhospdf" target="_blank" href="dowload/201407071638-manual_instrucoes_gato_pdf.pdf">Download PDF ⬇️</a>
+                <a download="arquivozip" target="_blank" href="dowload/CONWEB_I-main.zip">Download ZIP ⬇️</a>
+                <a download="arquivodoc" target="_blank" href="dowload/template-word.dotx">Download DOC ⬇️</a>
+            </div>
         </div>
+
      </div>
 
 
