@@ -1,0 +1,13 @@
+h1 {
+    background-color: orange;
+}
+body {
+    background-color: lightgray;
+}
+a {
+    display: flex;
+    justify-content: end;
+}
+p {
+    color: blue;
+}
