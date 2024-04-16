@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding:  0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -52,7 +53,8 @@ header li a:hover {
 #sec-1 {
     width: 100%px;
     height: 550px;
-    background: url(big-dev-soon-blog-main/assets/images/background-image.png) no-repeat;
+    background: url(background-image.png) no-repeat;
+    background-attachment: fixed;
 }
 
 #texto-chamativo {
@@ -71,7 +73,7 @@ header li a:hover {
 }
 
 #texto-chamativo a {
-    background-color: chartreuse;
+    background-color: rgba(104, 197, 11, 0.973);
     padding: 15px;
     margin-top: 15px;
     position: absolute;
@@ -80,25 +82,37 @@ header li a:hover {
     text-decoration: none;
 }
 #texto-chamativo a:hover {
-    background-color: rgba(128, 255, 0, 0.651);
-    font-weight: 600;
+    background-color: chartreuse;
+    color: #fff;
 }
-
 /** Parte 2 **/
-#blog-posts h2 {
-    font-size: 2em;
-}
 
-#publis {
-    background-color: aliceblue;
+#blog-posts {
+    height: 650px;
+    
+    width: 100%;
 }
-#grupo-img {
-    width: 450px;
-    background-color: antiquewhite;
+#iframe {
+    margin-top: 50px;
 }
-.center img {
-    padding-left: 20px;
-    padding-top: 20px;
+iframe {
+    display: block;
+    margin:auto;
 }
+.cab {
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
 
+}
+.cab a {
+    text-decoration: none;
+    padding-right: 10px;
+    font-weight: bold;
+    color: black;
+}
+.cab a:hover {
+    color: chartreuse;
+}
