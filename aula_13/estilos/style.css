@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "natural";
+    src: url(../fontes/Natural.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ececec;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+header h1 {
+    font-size: 3.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-family: "Platypi", serif;
+    font-size: 1.1em;
+}
+
+ul a {
+    text-decoration: none;
+    color: #636363;
+    padding: 10px;
+}
+
+ul a:hover {
+    background-color: #8d8d8d;
+    color: #ececec;
+    border-radius: 5px;
+}
+
+.div_img {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_img h1 {
+    font-size: 4em;
+}
+
+h1 {
+    font-family: natural;
+}
+
+.div_cont {
+    height: 300px;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ececec;
+}
+
+.div_cont h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.div_cont p {
+    font-size: 1.1em;
+    color: #636363;
+    font-family: "Platypi", serif;
+    margin-top: 10px;
+}
+
+
+#div_rio {
+    background-image: url(../imagens/ceu.jpg);
+}
+
+#div_floresta {
+    background-image: url(../imagens/Forest_lake_between_mountains.jpg);
+}
+#div_praia {
+    background-image: url(../imagens/beach_resort_sunset-1920x1200.jpg);
+}
