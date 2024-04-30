@@ -1,9 +1,16 @@
+/* importando as fontes que serão utilizadas no site */
+
 @font-face {
     font-family: "natural";
     src: url(../fontes/Natural.otf);
 }
 
+
+/* font-family: "Platypi", serif; */
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* definindo as configurações padrão */
 
 * {
     margin: 0;
@@ -16,17 +23,21 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
+/* estilizando o body */
 body {
     background-color: #ececec;
 }
 
-
+/* configurandoo cabeçalho */
 header {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    align-items: center;
-    padding: 0px 30px;
+
+    display: flex; 
+    justify-content: space-between; /* maior espacamento possível entre as caixas */
+    height: 80px; 
+    align-items: center; /* alinhando os itens verticalmente */
+    padding: 0px 30px; /* espaços lateraisdo header */
 }
 
 header h1 {
@@ -34,33 +45,37 @@ header h1 {
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    font-family: "Platypi", serif;
+    list-style-type: none; /* retirando o estilo de lusta */
+    display: flex; /* posicionando os itens horizontalmente */
+    gap: 20px; /* espaços entres os "botões" */
+    font-family: "Platypi", serif; 
     font-size: 1.1em;
 }
 
 ul a {
-    text-decoration: none;
+    text-decoration: none; /* retirando o estilo padrão do link */
     color: #636363;
     padding: 10px;
 }
 
-ul a:hover {
+ul a:hover { /* "quando o mause passar em cima do elemento de tag a..." */
     background-color: #8d8d8d;
     color: #ececec;
     border-radius: 5px;
 }
 
+
+/* configurando as imagens de fundo e o efeito parallax*/
+
 .div_img {
     height: 100%;
-    background-size: cover;
+    background-size: cover; /* cobrir todo o fundo */
     background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.9;
-    background-attachment: fixed;
+    background-repeat: no-repeat; /* não repetir o fundo */
+    opacity: 0.9; /* definindo uma transparência para o background */
+    background-attachment: fixed; /* fixar a imagem para ela n descer com a scroll do site */
 
+    /* alinhando o h1 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,16 +85,20 @@ ul a:hover {
     font-size: 4em;
 }
 
+
+/* padronizando a fonte do h1 */
 h1 {
     font-family: natural;
 }
 
+/* Configurando a div com conteúdo */
+
 .div_cont {
-    height: 300px;
     width: 80%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
+    padding: 40px 20px;
+    margin: 0 auto; /* alinahndo a div ao centro */
+    
+    /* alinhando o conteúdo da div */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,6 +117,7 @@ h1 {
     margin-top: 10px;
 }
 
+/* defininfo as imagens de fundo de cada div_img*/
 
 #div_rio {
     background-image: url(../imagens/ceu.jpg);
