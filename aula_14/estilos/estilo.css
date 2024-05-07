@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.lateral {
+    height: 100%;
+    width: 18%;
+    background-color: rgb(89, 112, 138);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+
+nav, nav ul, nav ul li, nav a {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav li a {
+    padding: 5px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    color: rgb(25, 54, 83);
+}
+
+main {
+    background-color: black;
+    height: 100%;
+    width: 82%;
+    background-attachment: fixed;
+    float: right;
+
+}
+
+.img_fix {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.inicio {
+    background-image: url(../imgs/Doces-franceses-scaled.jpeg);
+}
+
+.meio {
+    background-image: url(../imgs/DOCES-E-SALGADOS.jpg);
+}
+
+.texto {
+    display: flex;
+    padding: 20px;
+}
+
+.texto img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.texto p {
+    width: 60%;
+    line-height: 2em;
+}
+
+.texto div {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
