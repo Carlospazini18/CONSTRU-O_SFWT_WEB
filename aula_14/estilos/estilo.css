@@ -1,28 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poetsen+One&display=swap');
+
+/* lIMPANDO FORMATOS */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* PRECAVENDO BUGS DO CSS */
 html, body {
+
     height: 100%;
     width: 100%;
+
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
-body {
-    position: relative;
-}
+/* configurando o menu lateral */ 
 
 .lateral {
+
     height: 100%;
-    width: 18%;
+    width: 250px;
+
     background-color: rgb(89, 112, 138);
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+
+    /* FIXANDO O MENU NA LATERAL DO SITE PARA NÃO DESCER COM O SCROLL*/
+
+    position: fixed;
     top: 0px;
+    z-index: 1; 
+
 }
 
+.lateral img {
+    width: 200px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/*CONFIGURANDO O TAMANHO DOS ITENS CLICAVEIS DO MENU*/
 nav, nav ul, nav ul li, nav a {
     width: 100%;
     box-sizing: border-box;
@@ -33,60 +55,113 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
+/* FORMATANDO OS LINKS DO MENU*/
 nav li a {
     padding: 5px;
-    padding-left: 10px;
+    padding-left: 20px;
     text-decoration: none;
     color: white;
+    font-size: 1.1em;
+    font-family: "Poetsen One", sans-serif;
 }
 
+/*ANIMAÇÃO PARA QUANDO O MOUSE PASSAR EM CIMA DO TAG a DO MENU*/
 nav li a:hover {
     color: rgb(25, 54, 83);
+    border-bottom: 0.1px solid #f1f1f159;
 }
+
+
+/* configurando o conteúdo principal */
 
 main {
-    background-color: black;
-    height: 100%;
-    width: 82%;
-    background-attachment: fixed;
-    float: right;
 
+    height: 100%;
+    width: 81.5%; /* TAMANHO QUE SOBRA PARA O MAIN - .LATERAL */
+    float: right;
+    
 }
 
+
+/* CONFIGURANDO O CARRINHO NO CANTO */
+header {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f1f1f148;
+    height: fit-content;
+    border-radius: 100%;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+header:hover {
+    background-color: rgba(89, 112, 138, 0.596);
+}
+
+header img {
+    width: 50px;
+}
+
+
+/* CONFIGURANDO O PARALLAX */
 .img_fix {
     height: 100%;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    opacity: 0.9;
 }
 
 .inicio {
     background-image: url(../imgs/Doces-franceses-scaled.jpeg);
+
+    /* POSICIONANDO O CARRINHO DENTRO DA DIV EM LATERAL ESQUERDA SUPEIOR*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .meio {
-    background-image: url(../imgs/DOCES-E-SALGADOS.jpg);
+    background-image: url(../imgs/bases-de-confeitaria-2.jpg);
 }
 
-.texto {
+
+/* CONFIGURANDO AS CAIXAS DE CONTEÚDO */
+.texto, .texto2 {
     display: flex;
     padding: 20px;
+    background-color: #f1f1f1;
+    font-family: "Nunito", sans-serif;
 }
 
-.texto img {
-    width: 300px;
+/* INVERTANDO ORDEM DO ITENS DAS DIV'S */
+.texto2 {
+    flex-direction: row-reverse;
+}
+
+/* FORMATANDO A IMAGEM DO CONTEÚDO */
+.texto img, .texto2 img {
+    width: 350px;
+    height: 300px;
     border-radius: 10px;
 }
 
-.texto p {
+
+/* FORMATANDO O TEXTO DO PARÁGRAFO */
+.texto p, .texto2 p {
     width: 60%;
     line-height: 2em;
 }
 
-.texto div {
+
+/* CONFIGURANDO A IMAGEM DENTRO DA DIV (CENTRALIZAR) */
+.texto div, .texto2 div {
     width: 40%;
     display: flex;
     align-items: center;
