@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .divSimples {
+
+            display: block;
+            background-color: lightcoral;
+            border: 1px solid black;
+            text-align: center;
+
+        }
+
+        .divTratada {
+
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+
+        }
+
+        .divTratada > .divSimples, .divTratada > p {
+
+            height: 40px;
+            line-height: 40px;
+
+        }
+
+        /* .divTratada:hover {
+
+            background-color: antiquewhite;
+            text-decoration: underline;
+            font-weight: bold;
+
+        } */
+
+        .displayInline {
+
+            display: inline;
+
+        }
+
+        .colorRed {
+
+            color: red;
+
+        }
+
+        .destaque {
+
+            background-color: red;
+            color: blue;
+
+        }
+
+
+        .divTratada:hover > p {
+
+            background-color: antiquewhite;
+            text-decoration: underline;
+            font-weight: bold;
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="divSimples">01</div>
+
+    <div class="divTratada">
+        <div class="divSimples">02</div>
+    </div>
+
+    <div class="divTratada">
+        <p>03</p>
+    </div>
+
+    <div class="divSimples">04</div>
+
+    
+    <p>Lorem ipsum dolor, <span class="colorRed">sit amet consectetur adipisicing</span> elit. A nulla doloremque, quis provident omnis mollitia similique architecto obcaecati rerum culpa excepturi magni dolorem nemo, <div class="displayInline destaque">eligendi quisquam explicabo eos placeat</div> eveniet.</p>
+    
+</body>
+</html>
