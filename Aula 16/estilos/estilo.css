@@ -1,0 +1,147 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagens/wall.jpg);
+    background-position: center;
+}
+
+main {
+    height: fit-content;
+    background-color: black;
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#musicas, #album {
+    height: 70vh;
+    border: 1px solid blue;
+}
+
+#musicas {
+    width: 68%;
+    height: 70vh;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#album { 
+    width: 30%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#lista_musicas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#lista_musicas > li {
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#lista_musicas > li:hover {
+    background-color: rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+.div_img {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_texto {
+    width: 100%;
+}
+
+.menu {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.div_texto > h3 {
+    height: 50%;
+}
+
+.div_img > img {
+    width: 50px;
+}
+
+.div_texto > h3, .div_texto > span {
+    color: white;
+}
+
+
+.div_texto > span, .div_texto > h3 {
+    padding-left: 10px;
+}
+
+.div_texto > span {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.menu:hover > .circle{
+    background-color: rgb(136, 135, 135);
+}
+span > img {
+    width: 15px;
+    height: 15px;
+}
+
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.capa_album {
+    width: 200px;
+    height: 200px;
+}
+
+
+.capa_album > img{
+    width: 200px;
+}
+.play {
+    width: 250px;
+    height: 50px;
+    border: 1px solid blue;
+}
