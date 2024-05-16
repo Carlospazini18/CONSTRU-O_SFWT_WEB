@@ -14,11 +14,12 @@ body {
     justify-content: center;
     background-image: url(../imagens/wall.jpg);
     background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
     height: fit-content;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.562);
     width: 1000px;
     display: flex;
     margin: 0 auto;
@@ -27,14 +28,15 @@ main {
 
 #musicas, #album {
     height: 70vh;
-    border: 1px solid blue;
+    border: 1px solid rgba(0, 0, 255, 0.521);
 }
 
 #musicas {
     width: 68%;
-    height: 70vh;
+    height: fit-content;
     padding: 5px;
     border-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 255, 0.507);
 }
 
 #album { 
@@ -45,7 +47,9 @@ main {
     gap: 30px;
     align-items: center;
     justify-content: center;
-
+    padding:5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 255, 0.507);
 }
 
 #lista_musicas {
@@ -56,9 +60,10 @@ main {
 
 #lista_musicas > li {
     height: 60px;
-
+    padding: 0px 5px 0px 5px;
     display: flex;
     flex-direction: row;
+    border-radius: 5px;
 }
 
 #lista_musicas > li:hover {
@@ -143,5 +148,9 @@ span > img {
 .play {
     width: 250px;
     height: 50px;
-    border: 1px solid blue;
+}
+
+.play > img { 
+    width: 300px;
+    margin-left: -12%;
 }
