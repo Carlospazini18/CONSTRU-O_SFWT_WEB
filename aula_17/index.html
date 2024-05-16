@@ -5,34 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
-
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
     <article>
-        <section>
+        <section id="form">
             <form action="mailto:carlos.hpazini1806@gmail.com" method="post">
-                <label for="nome">Nome: <input type="text" name="nome" id="nome"></label>
+                <label for="nome">Nome: <input type="text" name="nome" id="nome" class="width_int" ></label>
                 
 
-                <label for="email">email: <input type="email" name="email" id="email"></label>
+                <label for="email">email: <input type="email" name="email" id="email" class="width_int" placeholder="seuemail@seudominio.com"></label>
 
                 <label for="data_nasc"> Data de nascimento: <input type="date" name="data_nasc" id=""></label>
             
                 <label for="data_visita"> Data e hora da visita: <input type="datetime" name="data_visita" id=""></label>
                 
-                <label for="senha">Senha: <input type="password" name="senha" id=""></label>
+                <label for="senha">Senha: <input type="password" name="senha" id="" class="width_int"></label>
             
-                <label for="">Contato:
+                <label for="" id="contato">Contato:
                     <label for="sim"><input type="radio" name="contato" id="sim" value="sim">sim</label>
-                    <label for="nao"><input type="radio" name="contato" id="nao" value="nao">sim</label>
+                    <label for="nao"><input type="radio" name="contato" id="nao" value="nao">não</label>
                 </label>
 
-                <label for="">
+                <label for="" id="assunto">
                     Assunto:
                     <label for="automovel"><input type="checkbox" name="automovel" id="automovel">Automovel</label>
                     <label for="negocios"><input type="checkbox" name="Negocios" id="negocios"> Negócios</label>
@@ -42,7 +39,7 @@
 
                 <label for="local">
                     Local:
-                    <select name="local" id="local">
+                    <select name="local" id="local" class="width_int">
                         <option value="vitoria">Vitória</option>
                         <option value="vila_velha">Vila Velha</option>
                         <option value="serra">Serra</option>
@@ -52,12 +49,17 @@
 
                 <label for="">
                     Comentário:
-                    <textarea name="comentario" id="" cols="30" rows="10">digite seu comentario</textarea>
+                    <textarea name="comentario" id="" cols="30" rows="10" class="width_int">digite seu comentario</textarea>
                 </label>
 
+                <div class="action">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
+        
             </form>
         </section>
-        <section>
+        <section id="img">
 
         </section>
     </article>

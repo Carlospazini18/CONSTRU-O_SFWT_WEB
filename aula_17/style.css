@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#form > form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+#form, #img {
+    width: 400px;
+    height: 600px; 
+    box-sizing: border-box;
+}
+
+
+#img {
+    background-image: url(banner-pesquisa-cientifica.jpg);
+    border-radius: 0px 20px 20px  0px;
+}
+#form{
+    padding: 15px;
+}
+
+input {
+    padding: 5px;
+}
+article {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label#assunto, label > label, label#contato  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.width_int {
+    width: 300px;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action > input {
+    width: 100px;
+}
+
+input[type="date"], input[type="datetime"] {
+    width: 150px;
+}
+
+select {
+    padding: 5px;
+}
+
+input, select, textarea {
+    border-radius: 5px;
+    border: 1px solid #034C8C;
+}
+
+input[type="submit"]{
+    background-color: #04B071;
+    font-weight: bolder;
+    color: white;
+}
+
+input[type="reset"]  {
+    background-color: #fd3f3f;
+    font-weight: bolder;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #04D9B2;
+}
+
+input[type="reset"]:hover {
+    background-color: #fa6060;
+}
+
+textarea {
+    padding: 10px;
+    height: 60px;
+}
