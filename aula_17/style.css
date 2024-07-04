@@ -33,6 +33,7 @@ body{
 #img {
     background-image: url(banner-pesquisa-cientifica.jpg);
     border-radius: 0px 20px 20px  0px;
+    background-size: cover;
 }
 #form{
     padding: 15px;
@@ -108,4 +109,9 @@ input[type="reset"]:hover {
 textarea {
     padding: 10px;
     height: 60px;
+}
+
+span > span { 
+    color: red;
+    padding-left: 1px;
 }
