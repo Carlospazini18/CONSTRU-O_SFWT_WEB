@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visite Paraty</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <header>
+        <div class="limita-secao">
+
+            <img src="img/logo.png" alt="logo Paraty">
+
+            <nav>
+
+                <a href="index.html">Home</a>
+                <a href="">Contato</a>
+                
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="secao-capa">
+            <div>
+                <h1>PARATY</h1>
+                <h2>VENHA VISITAR</h2>
+            </div>
+        
+        </section>
+
+        <section id="contato">
+            <form action="mailto:fabricio.ferreira@uvv.br" class="column">
+
+                <label for="nome" class="column">
+                    Nome do usuário
+                    <input type="text" name="nome" id="nome">
+                </label>
+
+                <label for="dt-nac" class="column">
+                    Data de Nascimento:
+                    <input type="date" name="dt-nasc" id="dt-nasc">
+                </label>
+
+                <label for="comentario" class="column">
+                    Comentário:
+                    <textarea name=comentario"" id="comentario"></textarea>
+                </label>
+
+                <label for="email" class="column">
+                    E-mail:
+                    <input type="email" name="email" id="email">
+                </label>
+
+                <label for="tel" class="column">
+                    Telefone:
+                    <input type="tel" name="" id="" placeholder="+xx (xx) xxxx-xxxxx">
+                </label>
+
+                <label for="hora-cont" class="column">
+                    Melhor horário para contato:
+                    <div>
+                        das
+                        <input type="time" name="hora-cont" id="hora-cont">
+                        as
+                        <input type="time" name="hora-cont" id="hora-cont">
+                    </div>
+                </label>
+
+                
+                <div>
+                    deseja receber nossas novidades?
+                    <div>
+                        <label for="novidades-sim">
+                            <input type="radio" name="novidades" id="novidades-sim">
+                            sim
+                        </label>
+                    
+                        <label for="novidades-nao">
+                            <input type="radio" name="novidades" id="novidades-nao">
+                            não
+                        </label>
+                    </div>
+                </div>
+
+                <label for="" class="column">
+                    Região de interesse:
+                    <select name="" id="" size="5" multiple>
+                        <option value="selecione">Selecione</option>
+                        <option value="serrana">Serrana</option>
+                        <option value="parias">Parias</option>
+                        <option value="grande-vitoria">Grande Vitória</option>
+                        <option value="guarapari">Guarapari</option>
+                    </select>
+                </label>
+
+                <div id="checkbox">
+                    <label for="automoveis"   id="checkbox">
+                        <input type="checkbox" name="auto" id="automoveis"> automoveis
+                    </label>
+                    <label for="neg-fin"  id="checkbox">
+                        <input type="checkbox" name="neg-fin" id="neg-fin"> Negócios e finanças
+                    </label>
+                    <label for="musica"  id="checkbox">
+                        <input type="checkbox" name="musica" id="musica"> Música
+                    </label>
+
+                    <label for="esp"  id="checkbox">
+                        <input type="checkbox" name="esp" id="esp"> Esporte
+                    </label>
+                </div>
+
+                <div class="bt">
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
+                    <button type="button">Voltar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="limita-secao">
+            Copyright 2024 © - Secretaria de Turismo do Estado do Espirto Santo™
+        </div> <!--#### .limita-secao ####-->
+    </footer>
+</body>
+
+</html>

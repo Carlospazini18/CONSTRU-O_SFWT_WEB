@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício</title>
+
+    <style>
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #calculadora-idade {
+            border: 1px solid red;
+            border-radius: 20px;
+            width: 500px;
+            height: fit-content;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: #f1f1f1;
+        }
+
+        input[type="number"]{
+            padding: 10px;
+            outline: none;
+            border-radius: 10px;
+            border: 1px solid red;
+        }
+
+        select {
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid red;
+        }
+
+        #calculadora-idade button {
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.651);
+            background-color: rgb(253, 61, 61);
+            border-radius: 5px;
+            font-size: 18px;
+            color: white;
+            font-weight: bolder;
+        }
+
+
+        #calculadora-idade button:hover {
+            background-color: rgb(114, 24, 24);
+        }
+
+        #resultado-idade {
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            border-radius: 10px;   
+            border: 1px solid red;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+ 
+    </style>
+
+</head>
+<body>
+
+    <main>
+
+        <div id="calculadora-idade">
+            <!-- Calcular idade -->
+
+            <!-- pegando os dados do usuário -->
+            <input type="number" name="dia-nasc" id="dia-nasc" max="31" min="1" placeholder="digite seu dia de nascimento">
+
+            <!-- Criando um select para recber o mes de nascimento -->
+            <select name="mes-nasc" id="mes-nasc">
+                <option value="0">selecione o mês</option>
+                <option value="1">Janeiro</option>
+                <option value="2">Fevereiro</option>
+                <option value="3">Março</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+
+            <input type="number" name="ano-nasc" id="ano-nasc"  max="2024" min="1" placeholder="digite o ano em que nasceu">
+
+            <!-- Criando um botão para que quando acionado, ative uma função JS -->
+            <button onclick="CalcularIdade()">Calcular Idade</button>
+
+            <!-- Criando uma div para exibir o resultado -->
+            <div id="resultado-idade"  onmousemove="CalcularIdade()">
+            </div>
+
+        </div>
+        
+    </main>
+
+    <script>
+
+        function CalcularIdade() {
+
+            var dia = document.getElementById('dia-nasc').value
+            var mes = document.getElementById('mes-nasc').value
+            var ano = document.getElementById('ano-nasc').value
+
+            if (dia <= 0 || mes == 0 || ano <= 0) {
+                var resultado = document.getElementById('resultado-idade')
+                resultado.innerHTML = "<span>Digite uma data de nasciento válida</span>"
+                resultado.style = 'color: red;'
+                return
+            }
+
+            var DataNasc = new Date(ano + "/" + mes + "/" + dia)
+
+            var hoje = new Date()
+            var idade = hoje.getFullYear() - DataNasc.getFullYear()
+
+            // verificar se oniversário do ano já aconteu ou vai acontecer
+
+            var aniversario = new Date(hoje.getFullYear(), DataNasc.getMonth(), DataNasc.getDate())
+            var DataAtual = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate())
+
+            if (aniversario > DataAtual) {
+                idade = idade - 1
+            }
+            
+            var resultado = document.getElementById('resultado-idade')
+            resultado.innerHTML = `<span> Sua idade é: ${idade} anos. </span>`
+        }
+
+    </script>
+</body>
+</html>

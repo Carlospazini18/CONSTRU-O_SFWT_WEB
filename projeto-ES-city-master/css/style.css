@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100; 0,200; 0,300; 0,400; 0,500; 0,600; 0,700; 0,800; 0,900; 1,100; 1,200; 1,300; 1,400; 1,500; 1,600; 1,700; 1,800; 1.900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.limita-secao {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+/* configurando o header */
+
+header > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+header  img {
+    width: 150px;
+}
+
+
+header nav {
+    font-size: 18px;
+}
+
+header a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: black;
+    padding: 5px;
+}
+
+header a:hover {
+    border-bottom: 3px solid #5f5e5e;
+}
+
+.secao-capa h1 {
+    font-size: 80px;
+}
+
+.secao-capa h2 {
+    font-size: 35px;
+}
+
+.secao-capa h1, .secao-capa h2 {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px #000000;
+    margin: 0;
+}
+
+.secao-capa {
+    background-image: url(../img/bg-estacao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.secao-capa::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+.secao-capa div {
+    position: relative;
+    z-index: 1;
+    padding: 60px 20px;
+}
+
+h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.secao-destaque img:first-of-type {
+    width: 100%;
+}
+
+.secao-destaque p::first-letter {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#pontos {
+    background-color: #e9e9e9;
+}
+
+p {
+    line-height: 32px;
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    margin-top: 12px;
+}
+
+li::before {
+    content: "";
+    background-image: url("../img/seta.png");
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+.galeria {
+    width: 100%;
+}
+
+.galeria img {
+    width: calc((100% / 3) - 3px);
+    opacity: 0.6;
+}
+
+.galeria img:hover {
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #f5c002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 0 0;
+}

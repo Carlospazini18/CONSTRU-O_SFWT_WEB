@@ -1,0 +1,59 @@
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    border: 1px solid #ccc;
+    gap: 20px;
+    padding: 40px;
+    width: 50%;
+    font-size: 18px
+}
+
+textarea {
+    resize: none;
+    line-height: 20px;
+    height: 90px;
+}
+
+input,textarea {
+    outline: none;
+    color: #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+select {
+    outline: none;
+    border-radius: 15px;
+    padding: 5px;
+}
+option {
+    padding: 2px;
+}
+input[type="time"], input[type="date"] {
+    color: #000;
+}
+
+select {
+    size: 5;
+}
+
+.bt {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 100px;
+    border-radius: 15px;
+    background-color: #ccc;
+    cursor: pointer;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+}
